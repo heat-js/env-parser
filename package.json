@@ -1,0 +1,30 @@
+{
+  "name": "@heat/env-parser",
+  "version": "0.0.1",
+  "main": "index",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heat-js/env-parser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/heat-js/env-parser/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-es2015-modules-commonjs-optimized": "^6.16.0",
+    "coffeescript": "^2.3.1"
+  },
+  "scripts": {
+    "prepublish": "bash ./build.sh",
+    "postpublish": "yarn cleanup",
+    "cleanup": "rm ./*.js"
+  },
+  "babel": {
+    "plugins": [
+      "transform-es2015-modules-commonjs-optimized"
+    ]
+  }
+}
